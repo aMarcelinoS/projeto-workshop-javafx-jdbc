@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
@@ -27,6 +28,8 @@ public class MainViewController implements Initializable {
 	@FXML
 	private MenuItem menuItemAbout;
 	
+	@FXML Button btnew;
+	
 	@FXML
 	public void onMenuItemSellerAction() {
 		System.out.println("onMenuItemSellerAction");
@@ -34,12 +37,17 @@ public class MainViewController implements Initializable {
 	
 	@FXML
 	public void onMenuItemDepartmentAction() {
-		System.out.println("onMenuItemDepartmentAction");
+		loadView("/gui/DepartmentList.fxml");
 	}
 	
 	@FXML
 	public void onMenuItemAboutAction() {
 		loadView("/gui/About.fxml");
+	}
+	
+	@FXML
+	public void onButtonBtNewAction() {
+		System.out.println("Click");
 	}
 		
 	@Override
