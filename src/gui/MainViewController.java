@@ -28,8 +28,7 @@ public class MainViewController implements Initializable {
 	@FXML
 	private MenuItem menuItemAbout;
 	
-	@FXML Button btnew;
-	
+		
 	@FXML
 	public void onMenuItemSellerAction() {
 		System.out.println("onMenuItemSellerAction");
@@ -45,11 +44,6 @@ public class MainViewController implements Initializable {
 		loadView("/gui/About.fxml");
 	}
 	
-	@FXML
-	public void onButtonBtNewAction() {
-		System.out.println("Click");
-	}
-		
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
 		// TODO Auto-generated method stub
