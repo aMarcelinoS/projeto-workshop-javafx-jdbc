@@ -90,8 +90,7 @@ public class DepartmentFormController implements Initializable {
 	private void notifyDataChangeListeners() {
 		for(DataChangeListener listener : dataChangeListeners) {
 			listener.onDataChanged();
-		}
-		
+		}		
 	}
 
 	private Department getFormData() {
@@ -108,8 +107,7 @@ public class DepartmentFormController implements Initializable {
 		
 		if (exception.getErrors().size() > 0){
 			throw exception;
-		}
-		
+		}		
 		return obj;
 	}
 
