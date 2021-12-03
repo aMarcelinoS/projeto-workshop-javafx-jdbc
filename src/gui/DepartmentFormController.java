@@ -83,7 +83,6 @@ public class DepartmentFormController implements Initializable {
 	
 	@FXML
 	private void onBtCancelAction(ActionEvent event) {
-		System.out.println("onBtCancelAction");
 		Utils.currentStage(event).close();
 	}
 	
